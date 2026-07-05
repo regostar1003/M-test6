@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* ===== 内容 ===== */
+
+.flow{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.flow h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:40px;
+}
+
+/* 全体 */
+.timeline{
+    position:relative;
+    margin-left:20px;
+}
+
+/* 縦線 */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:18px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#ddd;
+}
+
+/* 各項目 */
+.timeline-item{
+    display:flex;
+    gap:20px;
+    margin-bottom:50px;
+    position:relative;
+}
+
+/* 番号丸 */
+.num{
+    width:36px;
+    height:36px;
+    background:#ffffff;
+    color:#000;
+
+    border-radius:50%;   /* ←完全な円 */
+
+    border:2px solid #000;  /* ←黒い縁 */
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+    flex-shrink:0;
+    z-index:1;
+}
+
+/* 内容 */
+.content h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.content p{
+    line-height:2;
+    color:#444;
+    text-align:left;
+}
+
+.content ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.content li{
+    margin-bottom:6px;
+}
+
+.flow-title span{
+    display:inline-block;
+}

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/* ===== フッター全体 ===== */
+
+footer{
+    margin-top:100px;
+    padding:50px 20px;
+
+    background:#fff;
+    border-top:2px solid #e0e0e0;
+
+    line-height:2;
+}
+
+
+footer h3{
+    color:#2e8b57;
+    font-size:28px;
+
+    margin-bottom:20px;
+    text-align:center;
+}
+
+footer p{
+    max-width:500px;
+    margin:0 auto;
+
+    font-size:16px;
+    color:#555;
+
+    text-align:left;
+}
+
+
+/* ===== 項目名 ===== */
+
+.label{
+    display:inline-block;
+    width:80px;
+}
+
+
+/* ===== 住所の2行目 ===== */
+
+.address-indent{
+    display:inline-block;
+    padding-left:88px;
+}
+
+
+/* ===== お問い合わせアイコン ===== */
+
+.footer-links{
+    max-width:500px;
+
+    margin:25px auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.click-guide{
+    width:100%;
+
+    margin-bottom:10px;
+
+    font-size:12px;
+    color:#333;
+
+    text-align:left;
+}
+
+.footer-links a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:50px;
+    height:50px;
+
+    background:#66db66;
+
+    border-radius:50%;
+
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 6px 12px rgba(0,0,0,.2);
+}
+
+.footer-links img{
+    width:28px;
+    height:28px;
+}
+
+
+/* ===== クレジット ===== */
+
+.credit{
+    max-width:500px;
+
+    margin:20px auto 0;
+
+    border-top:1px solid #eee;
+    padding-top:10px;
+
+    font-size:10px;
+    color:#999;
+}
+
+
+/* ===== スマホ対応 ===== */
+
+@media (max-width:600px){
+
+    footer{
+        padding:40px 15px;
+    }
+
+    footer h3{
+        font-size:24px;
+    }
+
+    footer p{
+        font-size:15px;
+    }
+
+    .label{
+        width:70px;
+    }
+
+    .address-indent{
+        padding-left:78px;
+    }
+
+    .footer-links a{
+        width:45px;
+        height:45px;
+    }
+
+    .footer-links img{
+        width:24px;
+        height:24px;
+    }
+}

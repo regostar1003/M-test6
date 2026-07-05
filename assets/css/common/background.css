@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    background:
+        linear-gradient(
+            180deg,
+            #f8f9fa 0%,
+            #eef8f1 100%
+        );
+
+    overflow-x:hidden;
+}
+
+/* 左上 */
+body::before{
+    content:"";
+
+    position:fixed;
+
+    top:-120px;
+    left:-120px;
+
+    width:420px;
+    height:420px;
+
+    background:#2e8b57;
+
+    opacity:0.12;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-1;
+}
+
+/* 右下 */
+body::after{
+    content:"";
+
+    position:fixed;
+
+    bottom:-120px;
+    right:-120px;
+
+    width:380px;
+    height:380px;
+
+    background:#7dcf9c;
+
+    opacity:0.10;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    z-index:-1;
+}

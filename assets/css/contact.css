@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* ===== ご挨拶 ===== */
+
+.contact{
+    max-width:900px;
+    margin:140px auto 80px;  /* ←上を増やす（80→140くらい） */
+    padding:0 20px;
+}
+.contact h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact-block{
+    margin:80px 0;   /* ←上下しっかり空ける */
+    padding-bottom:25px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.contact-block h3{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#333;
+
+    text-align:center;   /* ←追加 */
+}
+
+.contact-block p{
+    font-size:16px;
+    line-height:2.2;   /* ←少し広げる */
+    color:#444;
+}
+.contact .contact-block:last-of-type{
+    border-bottom:none;
+    padding-bottom:0;
+}
+.contact-block ul{
+    list-style: disc;
+    padding-left: 25px;
+
+    margin: 20px 0 0 20px;  /* 上・右・下・左 */
+}
+.contact-block li{
+    margin-bottom:8px;   /* 行間を少し広げる */
+    line-height:1.8;
+}
+
+.tel{
+    font-size:20px;
+    font-weight:bold;
+    color:#2e8b57;
+}
+
+.contact-title span{
+    display:inline-block;
+}
+
+
+/* アイコン */
+.footer-links{
+    max-width:500px;
+
+    margin:25px auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.click-guide{
+    width:100%;
+
+    margin-bottom:10px;
+
+    font-size:12px;
+    color:#333;
+
+    text-align:left;
+}
+
+.footer-links a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:50px;
+    height:50px;
+
+    background:#66db66;
+
+    border-radius:50%;
+
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 6px 12px rgba(0,0,0,.2);
+}
+
+.footer-links img{
+    width:28px;
+    height:28px;
+}

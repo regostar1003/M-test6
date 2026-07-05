@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* ===== ご挨拶 ===== */
+
+.service{
+    max-width:1000px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.service h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.service-list{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+
+    display:grid;
+    gap:25px;
+    grid-template-columns:repeat(3,1fr);
+}
+
+
+
+.service-item{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.service-item:hover{
+    transform:translateY(-5px);
+}
+
+.service-item img{
+    width:60px;
+    height:60px;
+    margin-bottom:15px;
+}
+
+.service-item h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.service-title span{
+    display:inline-block;
+}
+
+.service-item p{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+    text-align:left;
+}
+
+
+
+/* ===== メニュー ===== */
+
+/* PC（3×2） */
+.menu{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+
+/* ===== タブレット（2×3） ===== */
+
+@media(max-width:1000px){
+
+    .service-list{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+}
+
+/* ===== スマホ ===== */
+
+@media(max-width:600px){
+    .menu{
+        grid-template-columns:1fr;
+    }
+
+    .service-list{
+        grid-template-columns:1fr;
+    }
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* ===== 内容 ===== */
+
+.price{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.price h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.price-block{
+    margin:60px 0;
+    padding:30px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.price-block h3{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.price-title span{
+    display:inline-block;
+}
+.price-block h4{
+    font-size:18px;
+    margin:20px 0 10px;
+    color:#2e8b57;
+}
+
+.price-block p{
+    font-size:16px;
+    line-height:2;
+    color:#444;
+}
+
+.price-block ul{
+    list-style: disc;
+    padding-left:25px;
+    margin:10px 0 20px;
+}
+
+.price-block li{
+    margin-bottom:8px;
+    line-height:1.8;
+}
+
+.price-note{
+    margin-top:20px;
+    font-size:13px;
+    color:#888;
+    text-align:center;
+}
